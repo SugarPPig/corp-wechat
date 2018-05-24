@@ -978,7 +978,7 @@ class CorpAPI extends API
     {
         $url = "https://api.mch.weixin.qq.com/mmpaymkttransfers/sendworkwxredpack"; 
         $args = Utils::Object2Array($SendWorkWxRedpackReq);
-        $SendWorkWxRedpackRsp = self::_HttpPostXml($url, $args); 
+        $SendWorkWxRedpackRsp = self::_HttpPostXml($url, $args);
         self::_CheckXmlRetCode($SendWorkWxRedpackRsp);
         return $SendWorkWxRedpackRsp;
     }

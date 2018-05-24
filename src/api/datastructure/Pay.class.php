@@ -1,4 +1,5 @@
 <?php
+
 namespace sugarfishes\corpWechat\api\datastructure;
 
 use sugarfishes\corpWechat\utils\Utils;

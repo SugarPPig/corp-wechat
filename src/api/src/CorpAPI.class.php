@@ -953,8 +953,11 @@ class CorpAPI extends API
     static private function _HttpPostXml($url, $args)
     {
         $postData = Utils::Array2Xml("xml", $args);
-        $this->rspRawStr = HttpUtils::httpPost($url, $postData);
-        return Utils::Xml2Array($this->rspRawStr);
+//        $this->rspRawStr = HttpUtils::httpPost($url, $postData);
+//        return Utils::Xml2Array($this->rspRawStr);
+        // 避免报错 , 暂不清楚是否会影响其他地方
+        $rspRawStr = HttpUtils::httpPost($url, $postData);
+        return Utils::Xml2Array($rspRawStr);
     } 
     static private function _CheckXmlRetCode($rsp)
     {

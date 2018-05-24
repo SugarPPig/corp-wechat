@@ -1,0 +1,21 @@
+{
+    "name": "sugarfishes/corpwechat",
+    "description": "library for corp wechat",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liaotian-mac",
+            "email": "417296832@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sugarfishes\\corpWechat\\": "src/"
+        }
+    }
+}

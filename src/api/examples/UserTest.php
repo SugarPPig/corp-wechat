@@ -8,12 +8,15 @@
  * @Date 2017-12-26
  *
  */
+
+namespace sugarfishes\corpWechat\api\examples;
+
+use Exception;
+use sugarfishes\corpWechat\api\src\CorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceCorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceProviderAPI;
+
 header("Content-type: text/html; charset=utf-8");
-include_once(dirname(__FILE__)."/../src/CorpAPI.class.php");
-include_once(dirname(__FILE__)."/../src/ServiceCorpAPI.class.php");
-include_once(dirname(__FILE__)."/../src/ServiceProviderAPI.class.php");
-
-
 $config = require('config.php');
 // 需启用 "管理工具" -> "通讯录同步", 并使用该处的secret, 才能通过API管理通讯录
 //
@@ -44,7 +47,7 @@ try {
 
     //
     $userList = $api->UserList(1, 1);
-    p($userList);
+    var_dump($userList);
 //
 //    //
 //    $userList = $api->UserList(1, 0);

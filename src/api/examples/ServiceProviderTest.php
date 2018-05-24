@@ -9,9 +9,14 @@
  *
  */
 
-include_once("../src/CorpAPI.class.php");
-include_once("../src/ServiceCorpAPI.class.php");
-include_once("../src/ServiceProviderAPI.class.php");
+namespace sugarfishes\corpWechat\api\examples;
+
+use Exception;
+use sugarfishes\corpWechat\api\datastructure\GetRegisterCodeReq;
+use sugarfishes\corpWechat\api\datastructure\SetAgentScopeReq;
+use sugarfishes\corpWechat\api\src\CorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceCorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceProviderAPI;
  
 try {
     $ServiceProviderAPI = new ServiceProviderAPI(

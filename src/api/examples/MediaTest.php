@@ -1,8 +1,10 @@
 <?php
+namespace sugarfishes\corpWechat\api\examples;
 
-include_once("../src/CorpAPI.class.php");
-include_once("../src/ServiceCorpAPI.class.php");
-include_once("../src/ServiceProviderAPI.class.php");
+use Exception;
+use sugarfishes\corpWechat\api\src\CorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceCorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceProviderAPI;
 
 /*
  * Copyright (C) 2017 All rights reserved.

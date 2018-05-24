@@ -8,10 +8,15 @@
  * @Date 2017-12-26
  *
  */
- 
-include_once("../src/CorpAPI.class.php");
-include_once("../src/ServiceCorpAPI.class.php");
-include_once("../src/ServiceProviderAPI.class.php");
+namespace sugarfishes\corpWechat\api\examples;
+
+use Exception;
+use sugarfishes\corpWechat\api\datastructure\Message;
+use sugarfishes\corpWechat\api\datastructure\NewsArticle;
+use sugarfishes\corpWechat\api\datastructure\NewsMessageContent;
+use sugarfishes\corpWechat\api\src\CorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceCorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceProviderAPI;
 // 
 
 $config = require('./config.php');

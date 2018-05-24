@@ -10,11 +10,24 @@
  *
  */
 
-include_once(__DIR__."/../../utils/Utils.class.php");
-include_once(__DIR__."/../../utils/HttpUtils.class.php");
-include_once(__DIR__."/../../utils/error.inc.php");
+namespace sugarfishes\corpWechat\api\src;
 
-include_once(__DIR__."/../datastructure/ServiceProvider.class.php");
+use sugarfishes\corpWechat\utils\Utils;
+use sugarfishes\corpWechat\utils\HttpUtils;
+use sugarfishes\corpWechat\utils\SysError;
+
+use sugarfishes\corpWechat\api\datastructure\GetLoginInfoRsp;
+use sugarfishes\corpWechat\api\datastructure\LoginUserInfo;
+use sugarfishes\corpWechat\api\datastructure\LoginCorpInfo;
+use sugarfishes\corpWechat\api\datastructure\LoginAgentInfo;
+use sugarfishes\corpWechat\api\datastructure\LoginAuthInfo;
+use sugarfishes\corpWechat\api\datastructure\PartyInfo;
+use sugarfishes\corpWechat\api\datastructure\GetRegisterCodeReq;
+use sugarfishes\corpWechat\api\datastructure\GetRegisterInfoRsp;
+use sugarfishes\corpWechat\api\datastructure\ContactSync;
+use sugarfishes\corpWechat\api\datastructure\RegisterAuthUserInfo;
+use sugarfishes\corpWechat\api\datastructure\SetAgentScopeReq;
+use sugarfishes\corpWechat\api\datastructure\SetAgentScopeRsp;
 
 class ServiceProviderAPI extends API
 {

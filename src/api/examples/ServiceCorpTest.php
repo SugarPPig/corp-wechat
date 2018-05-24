@@ -8,9 +8,12 @@
  * @Date 2017-12-26
  *
  */
-include_once(dirname(__FILE__)."/../src/CorpAPI.class.php");
-include_once(dirname(__FILE__)."/../src/ServiceCorpAPI.class.php");
-include_once(dirname(__FILE__)."/../src/ServiceProviderAPI.class.php");
+namespace sugarfishes\corpWechat\api\examples;
+
+use Exception;
+use sugarfishes\corpWechat\api\src\CorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceCorpAPI;
+use sugarfishes\corpWechat\api\src\ServiceProviderAPI;
  
 try { 
     $authCorpId = "AUTH_CORPID";

@@ -11,6 +11,7 @@
  */
 namespace sugarfishes\corpWechat\api\src;
 
+use sugarfishes\corpWechat\utils\QyApiError;
 use sugarfishes\corpWechat\utils\Utils;
 use sugarfishes\corpWechat\utils\HttpUtils;
 use sugarfishes\corpWechat\utils\SysError;
@@ -951,7 +952,7 @@ class CorpAPI extends API
     //
     static private function _HttpPostXml($url, $args)
     {
-        $postData = Utils::Array2Xml("xml", $args); 
+        $postData = Utils::Array2Xml("xml", $args);
         $this->rspRawStr = HttpUtils::httpPost($url, $postData);
         return Utils::Xml2Array($this->rspRawStr);
     } 

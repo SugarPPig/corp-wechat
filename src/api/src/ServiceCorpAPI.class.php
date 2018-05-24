@@ -9,16 +9,29 @@
  * @Date 2017-12-26
  *
  */
+namespace sugarfishes\corpWechat\api\src;
 
-include_once(__DIR__."/../../utils/Utils.class.php");
-include_once(__DIR__."/../../utils/HttpUtils.class.php");
-include_once(__DIR__."/../../utils/error.inc.php");
+use sugarfishes\corpWechat\utils\Utils;
+use sugarfishes\corpWechat\utils\HttpUtils;
+use sugarfishes\corpWechat\utils\SysError;
 
-include_once(__DIR__."/../datastructure/ServiceCorp.class.php");
-include_once(__DIR__."/CorpAPI.class.php");
-include_once(__DIR__."/API.class.php");
+use sugarfishes\corpWechat\api\datastructure\SetSessionInfoReq;
+use sugarfishes\corpWechat\api\datastructure\SessionInfo;
+use sugarfishes\corpWechat\api\datastructure\GetPermanentCodeRsp;
+use sugarfishes\corpWechat\api\datastructure\AuthCorpInfo;
+use sugarfishes\corpWechat\api\datastructure\AuthInfo;
+use sugarfishes\corpWechat\api\datastructure\AgentBriefEx;
+use sugarfishes\corpWechat\api\datastructure\AgentPrivilege;
+use sugarfishes\corpWechat\api\datastructure\AuthUserInfo;
+use sugarfishes\corpWechat\api\datastructure\GetAuthInfoRsp;
+use sugarfishes\corpWechat\api\datastructure\GetAdminListRsp;
+use sugarfishes\corpWechat\api\datastructure\AppAdmin;
+use sugarfishes\corpWechat\api\datastructure\GetUserinfoBy3rdRsp;
+use sugarfishes\corpWechat\api\datastructure\GetUserDetailBy3rdRsp;
+use sugarfishes\corpWechat\api\src\CorpAPI;
+use sugarfishes\corpWechat\api\src\API;
 
-class ServiceCorpAPI extends CorpAPI 
+class ServiceCorpAPI extends CorpAPI
 {
     private $suite_id = null; // string 
     private $suite_secret = null; // string 

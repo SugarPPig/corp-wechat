@@ -11,7 +11,7 @@ use sugarfishes\corpWechat\api\src\ServiceProviderAPI;
  *   
  * @File MediaTest.php
  * @Brief 
- * @Author abelzhu, abelzhu@tencent.com
+ * @Author abelzhu, abelzhu@tencent.com, sugarfishes
  * @Version 1.0
  * @Date 2017-12-26
  *

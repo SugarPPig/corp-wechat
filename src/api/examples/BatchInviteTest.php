@@ -3,7 +3,7 @@
  *   
  * @File BatchInviteTest.php
  * @Brief 
- * @Author abelzhu, abelzhu@tencent.com
+ * @Author abelzhu, abelzhu@tencent.com, sugarfishes
  * @Version 1.0
  * @Date 2018-01-02
  *

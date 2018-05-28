@@ -10,6 +10,7 @@
  */
 namespace sugarfishes\corpWechat\api\examples;
 
+use Exception;
 use sugarfishes\corpWechat\api\datastructure\Agent;
 use sugarfishes\corpWechat\api\src\CorpAPI;
 use sugarfishes\corpWechat\api\src\ServiceCorpAPI;

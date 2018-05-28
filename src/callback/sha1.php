@@ -1,5 +1,6 @@
 <?php
 namespace sugarfishes\corpWechat\callback;
+use Exception;
 use sugarfishes\corpWechat\callback\ErrorCode;
 /**
  * SHA1 class

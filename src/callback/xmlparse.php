@@ -1,6 +1,8 @@
 <?php
 namespace sugarfishes\corpWechat\callback;
 
+use DOMDocument;
+use Exception;
 use sugarfishes\corpWechat\callback\ErrorCode;
 /**
  * XMLParse class

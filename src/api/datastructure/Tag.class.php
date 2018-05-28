@@ -2,6 +2,7 @@
 
 namespace sugarfishes\corpWechat\api\datastructure;
 
+use sugarfishes\corpWechat\utils\QyApiError;
 use sugarfishes\corpWechat\utils\Utils;
 
 class TagUser { 

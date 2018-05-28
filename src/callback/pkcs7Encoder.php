@@ -1,5 +1,6 @@
 <?php
 namespace sugarfishes\corpWechat\callback;
+use Exception;
 use sugarfishes\corpWechat\callback\ErrorCode;
 
 /**
@@ -23,7 +24,7 @@ class PKCS7Encoder
 		//计算需要填充的位数
 		$amount_to_pad = PKCS7Encoder::$block_size - ($text_length % PKCS7Encoder::$block_size);
 		if ($amount_to_pad == 0) {
-			$amount_to_pad = PKCS7Encoder::block_size;
+			$amount_to_pad = PKCS7Encoder::$block_size;
 		}
 		//获得补位所用的字符
 		$pad_chr = chr($amount_to_pad);

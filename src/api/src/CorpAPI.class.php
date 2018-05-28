@@ -11,6 +11,7 @@
  */
 namespace sugarfishes\corpWechat\api\src;
 
+use Exception;
 use sugarfishes\corpWechat\utils\QyApiError;
 use sugarfishes\corpWechat\utils\Utils;
 use sugarfishes\corpWechat\utils\HttpUtils;

@@ -1,6 +1,7 @@
 <?php
 
-use sugarfishes\corpWechat\HttpUtils;
+use sugarfishes\corpWechat\utils\HttpUtils;
+
 // $output = HttpUtils::httpGet("http://localhost:8080");
 // var_dump($output);
 

@@ -2,6 +2,7 @@
 namespace sugarfishes\corpWechat\api\datastructure;
 
 use sugarfishes\corpWechat\utils\Utils;
+use sugarfishes\corpWechat\utils\QyApiError;
 
 class ExtattrItem
 {

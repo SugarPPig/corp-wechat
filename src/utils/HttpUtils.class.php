@@ -1,8 +1,6 @@
 <?php
 namespace sugarfishes\corpWechat\utils;
 
-use sugarfishes\corpWechat\SysError;
-
 
 class HttpUtils
 {

@@ -1,6 +1,8 @@
 <?php
 namespace sugarfishes\corpWechat\api\src;
 
+use sugarfishes\corpWechat\utils\ParameterError;
+use sugarfishes\corpWechat\utils\QyApiError;
 use sugarfishes\corpWechat\utils\Utils;
 use sugarfishes\corpWechat\utils\HttpUtils;
 use sugarfishes\corpWechat\utils\SysError;
@@ -210,9 +212,9 @@ abstract class API
                 if ("NO_TOKEN" != $tokenType && true == $refreshTokenWhenExpired) {
                     if ("ACCESS_TOKEN" == $tokenType) { 
                         $this->RefreshAccessToken();
-                    } else if ("SUITE_ACCESS_TOKEN" == tokenType) {
+                    } else if ("SUITE_ACCESS_TOKEN" == $tokenType) {
                         $this->RefreshSuiteAccessToken();
-                    } else if ("PROVIDER_ACCESS_TOKEN" == tokenType) { 
+                    } else if ("PROVIDER_ACCESS_TOKEN" == $tokenType) {
                         $this->RefreshProviderAccessToken();
                     }
                     $retryCnt += 1;
